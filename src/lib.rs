@@ -1,5 +1,22 @@
 use std::any::type_name;
 
+/// Returns the name of the given type
+///
+/// # Usage example
+///
+/// ```
+/// use rstool::kind;
+/// print!("{}", kind(4));
+/// // "i32"
+/// ```
+///
+/// # Argument
+///
+/// - _ the value for which we want to display the type
+///
+/// # Returns
+///
+/// - &' static str
 pub fn kind<T>(_: T) -> &'static str {
     type_name::<T>()
 }
