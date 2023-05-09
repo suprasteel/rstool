@@ -1,3 +1,5 @@
+//! Tooling to teach/learn rust
+
 use std::any::type_name;
 
 /// Returns the name of the given type
